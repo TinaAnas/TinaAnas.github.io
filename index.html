@@ -1,13 +1,38 @@
 <!doctype html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="utf-8">
-  <title>قائمة بالمادة العلمية للمقرات - للطلاب</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>قائمة بالمواد العلمية للطلاب</title>
+  <style>
+    /* Basic RTL-friendly styles to keep the page readable */
+    body { font-family: Arial, Tahoma, 'Noto Naskh Arabic', sans-serif; line-height: 1.6; padding: 1rem; max-width: 900px; margin: 0 auto; }
+    header { border-bottom: 1px solid #ddd; padding-bottom: 0.5rem; margin-bottom: 1rem; }
+    h1 { margin: 0 0 0.5rem 0; }
+    .about { background: #f9f9f9; padding: 1rem; border-radius: 6px; margin-bottom: 1rem; }
+    .about h2 { margin-top: 0; }
+    .about .en { font-size: 0.95rem; color: #333; direction: ltr; text-align: left; margin-top: 0.5rem; }
+    a { color: #1155cc; }
+  </style>
 </head>
 <body>
-  <h1>المقررات</h1>
-  <ul>
-    <li><a href="/Courses/Algorithms-Data-Structures/">خورازميات وبنى معطيات - جامعة دمشق</a></li>
-  </ul>
+  <header>
+    <h1>المقررات</h1>
+    <p>مرحبًا بكم في موقعي. هنا بعض المواد والروابط المفيدة للطلاب.</p>
+  </header>
+
+  <section class="about" aria-labelledby="about-title">
+    <h2 id="about-title">معلومات عني</h2>
+    <p>أنا أنس طينة، خريج كلية الهندسة المعلوماتية بجامعة دمشق للعام 2012.
+وهذا موقعي الشخصي لأشارك به مواد تعليمية مساندة للطلاب.
+    </p>    
+  </section>
+
+  <nav aria-label="courses">
+    <ul>
+      <li><a href="/Courses/Algorithms-Data-Structures/">خوارزميات وبنى معطيات - جامعة دمشق</a></li>
+    </ul>
+  </nav>
+
 </body>
 </html>
